@@ -9,6 +9,8 @@ rename c:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\
 disable hibernation: powercfg -h off
 
 
+enable PS script for process: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
 disable all in Task scheduler:
 Microsoft\Windows\Application Experience
 Microsoft\Windows\Customer Experience Improvement Program
