@@ -3,29 +3,53 @@
 # certain services comment out the corresponding lines below.
 
 $services = @(
+    "AJRouter"
+    "ALG"
+    "CscService" #Offline Files
     "diagnosticshub.standardcollector.service" # Microsoft (R) Diagnostics Hub Standard Collector Service
     "DiagTrack"                                # Diagnostics Tracking Service
     "dmwappushservice"                         # WAP Push Message Routing Service (see known issues)
+    "FrameServer"
     "HomeGroupListener"                        # HomeGroup Listener
     "HomeGroupProvider"                        # HomeGroup Provider
+    "HvHost"
+    "icssvc" # mobile hotspot
+    "irmon" #Infrared monitor service
     "lfsvc"                                    # Geolocation Service
+    "MapsBroker"
     "MapsBroker"                               # Downloaded Maps Manager
+    "NaturalAuthentication"
+    "NcdAutoSetup" #Network Connected Devices Auto-Setup
+    "Netlogon"
     "NetTcpPortSharing"                        # Net.Tcp Port Sharing Service
+    "NfsClnt"
+    "PeerDistSvc"
+    "PhoneSvc" # phone
     "RemoteAccess"                             # Routing and Remote Access
     "RemoteRegistry"                           # Remote Registry
+    "RetailDemo"
+    "RpcLocator"
+    "ScDeviceEnum" # smartcard
+    "SCPolicySvc" # smartcard
+    "SEMgrSvc" #Payments and NFC/SE Manager
     "SharedAccess"                             # Internet Connection Sharing (ICS)
+    "SmsRouter"
+    "SNMPTRAP"
     "TrkWks"                                   # Distributed Link Tracking Client
     "WbioSrvc"                                 # Windows Biometric Service
-    #"WlanSvc"                                 # WLAN AutoConfig
+    "wcncsvc" # Windows Connect Now - Config Registrar
+    "WinRM"
+    "wisvc" # insider
     "WMPNetworkSvc"                            # Windows Media Player Network Sharing Service
-    "wscsvc"                                   # Windows Security Center Service
-    #"WSearch"                                 # Windows Search
+    "WpcMonSvc" # Parental Controls
+    "WwanSvc"
     "XblAuthManager"                           # Xbox Live Auth Manager
     "XblGameSave"                              # Xbox Live Game Save Service
+    "XboxGipSvc"
     "XboxNetApiSvc"                            # Xbox Live Networking Service
-
-    # Services which cannot be disabled
-    #"WdNisSvc"
+    #"WlanSvc"                                 # WLAN AutoConfig
+    #"wscsvc"                                   # Windows Security Center Service
+    #"WSearch"                                 # Windows Search
 )
 
 foreach ($service in $services) {
