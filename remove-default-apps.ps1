@@ -2,9 +2,6 @@
 # This script removes unwanted Apps that come with Windows. If you  do not want
 # to remove certain Apps comment out the corresponding lines below.
 
-Import-Module -DisableNameChecking $PSScriptRoot\..\lib\take-own.psm1
-Import-Module -DisableNameChecking $PSScriptRoot\..\lib\force-mkdir.psm1
-
 Write-Output "Elevating privileges for this process"
 do {} until (Elevate-Privileges SeTakeOwnershipPrivilege)
 
@@ -124,7 +121,3 @@ foreach ($app in $apps) {
         Where-Object DisplayName -EQ $app |
         Remove-AppxProvisionedPackage -Online
 }
-
-# Prevents "Suggested Applications" returning
-force-mkdir "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Cloud Content"
-Set-ItemProperty "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Cloud Content" "DisableWindowsConsumerFeatures" 1
