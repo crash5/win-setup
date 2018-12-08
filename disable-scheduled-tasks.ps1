@@ -46,6 +46,7 @@ $tasks = @(
     # "\Microsoft\Windows\DiskDiagnostic\Microsoft-Windows-DiskDiagnosticResolver"
     "\Microsoft\Windows\DiskFootprint\Diagnostics"
     "\Microsoft\Windows\Feedback\Siuf\DmClient"
+    "\Microsoft\Windows\Feedback\Siuf\DmClientOnScenarioDownload"
     # "\Microsoft\Windows\File Classification Infrastructure\Property Definition Sync"
     "\Microsoft\Windows\FileHistory\File History (maintenance mode)"
     # "\Microsoft\Windows\LanguageComponentsInstaller\Installation"
