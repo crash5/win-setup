@@ -2,9 +2,6 @@
 # This script removes unwanted Apps that come with Windows. If you  do not want
 # to remove certain Apps comment out the corresponding lines below.
 
-Write-Output "Elevating privileges for this process"
-do {} until (Elevate-Privileges SeTakeOwnershipPrivilege)
-
 Write-Output "Uninstalling default apps"
 $apps = @(
     # default Windows 10 apps
