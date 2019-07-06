@@ -138,6 +138,8 @@ $tasks = @(
     # "\Microsoft\Windows\Workplace Join\Automatic-Device-Join"
     # "\Microsoft\Windows\WS\License Validation"
     # "\Microsoft\Windows\WS\WSTask"
+	"\Microsoft\XblGameSave\XblGameSaveTask"
+	"\Microsoft\OneCore\DirectX\DirectXDatabaseUpdater"
 )
 
 foreach ($task in $tasks) {
