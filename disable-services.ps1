@@ -1,55 +1,50 @@
-#   Description:
-# This script disables unwanted Windows services. If you do not want to disable
-# certain services comment out the corresponding lines below.
-
 $services = @(
     "AJRouter"
     "ALG"
-    "CscService" #Offline Files
-    "diagnosticshub.standardcollector.service" # Microsoft (R) Diagnostics Hub Standard Collector Service
-    "DiagTrack"                                # Diagnostics Tracking Service
-    "dmwappushservice"                         # WAP Push Message Routing Service (see known issues)
+    "CscService"                                    # Offline Files
+    "diagnosticshub.standardcollector.service"      # Microsoft (R) Diagnostics Hub Standard Collector Service
+    "DiagTrack"                                     # Diagnostics Tracking Service
+    "dmwappushservice"                              # WAP Push Message Routing Service (see known issues)
     "FrameServer"
-    "HomeGroupListener"                        # HomeGroup Listener
-    "HomeGroupProvider"                        # HomeGroup Provider
+    "HomeGroupListener"                             # HomeGroup Listener
+    "HomeGroupProvider"                             # HomeGroup Provider
     "HvHost"
-    "icssvc" # mobile hotspot
-    "irmon" #Infrared monitor service
-    "lfsvc"                                    # Geolocation Service
-    "MapsBroker"
-    "MapsBroker"                               # Downloaded Maps Manager
+    "icssvc"                                        # mobile hotspot
+    "irmon"                                         # Infrared monitor service
+    "lfsvc"                                         # Geolocation Service
+    "MapsBroker"                                    # Downloaded Maps Manager
     "NaturalAuthentication"
-    "NcdAutoSetup" #Network Connected Devices Auto-Setup
+    "NcdAutoSetup"                                  # Network Connected Devices Auto-Setup
     "Netlogon"
-    "NetTcpPortSharing"                        # Net.Tcp Port Sharing Service
+    "NetTcpPortSharing"                             # Net.Tcp Port Sharing Service
     "NfsClnt"
     "PeerDistSvc"
-    "PhoneSvc" # phone
-    "RemoteAccess"                             # Routing and Remote Access
-    "RemoteRegistry"                           # Remote Registry
+    "PhoneSvc"                                      # phone
+    "RemoteAccess"                                  # Routing and Remote Access
+    "RemoteRegistry"                                # Remote Registry
     "RetailDemo"
     "RpcLocator"
-    "ScDeviceEnum" # smartcard
-    "SCPolicySvc" # smartcard
-    "SEMgrSvc" #Payments and NFC/SE Manager
-    "SharedAccess"                             # Internet Connection Sharing (ICS)
+    "ScDeviceEnum"                                  # smartcard
+    "SCPolicySvc"                                   # smartcard
+    "SEMgrSvc"                                      # Payments and NFC/SE Manager
+    "SharedAccess"                                  # Internet Connection Sharing (ICS)
     "SmsRouter"
     "SNMPTRAP"
-    "TrkWks"                                   # Distributed Link Tracking Client
-    "WbioSrvc"                                 # Windows Biometric Service
-    "wcncsvc" # Windows Connect Now - Config Registrar
+    "TrkWks"                                        # Distributed Link Tracking Client
+    "WbioSrvc"                                      # Windows Biometric Service
+    "wcncsvc"                                       # Windows Connect Now - Config Registrar
     "WinRM"
-    "wisvc" # insider
-    "WMPNetworkSvc"                            # Windows Media Player Network Sharing Service
-    "WpcMonSvc" # Parental Controls
+    "wisvc"                                         # insider
+    "WMPNetworkSvc"                                 # Windows Media Player Network Sharing Service
+    "WpcMonSvc"                                     # Parental Controls
     "WwanSvc"
-    "XblAuthManager"                           # Xbox Live Auth Manager
-    "XblGameSave"                              # Xbox Live Game Save Service
+    "XblAuthManager"                                # Xbox Live Auth Manager
+    "XblGameSave"                                   # Xbox Live Game Save Service
     "XboxGipSvc"
-    "XboxNetApiSvc"                            # Xbox Live Networking Service
-    #"WlanSvc"                                 # WLAN AutoConfig
-    #"wscsvc"                                   # Windows Security Center Service
-    #"WSearch"                                 # Windows Search
+    "XboxNetApiSvc"                                 # Xbox Live Networking Service
+    #"WlanSvc"                                      # WLAN AutoConfig
+    #"wscsvc"                                       # Windows Security Center Service
+    #"WSearch"                                      # Windows Search
 )
 
 foreach ($service in $services) {
