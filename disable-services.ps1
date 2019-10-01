@@ -8,12 +8,13 @@ $services = @(
     "FrameServer"
     "HomeGroupListener"                             # HomeGroup Listener
     "HomeGroupProvider"                             # HomeGroup Provider
-    "HvHost"
+#    "HvHost"                                        # Needed by sandbox
     "icssvc"                                        # mobile hotspot
     "irmon"                                         # Infrared monitor service
     "lfsvc"                                         # Geolocation Service
     "MapsBroker"                                    # Downloaded Maps Manager
     "NaturalAuthentication"
+    "BranchCache"
     "NcdAutoSetup"                                  # Network Connected Devices Auto-Setup
     "Netlogon"
     "NetTcpPortSharing"                             # Net.Tcp Port Sharing Service
@@ -27,7 +28,7 @@ $services = @(
     "ScDeviceEnum"                                  # smartcard
     "SCPolicySvc"                                   # smartcard
     "SEMgrSvc"                                      # Payments and NFC/SE Manager
-    "SharedAccess"                                  # Internet Connection Sharing (ICS)
+#    "SharedAccess"                                  # Internet Connection Sharing (ICS) - needed by sandbox
     "SmsRouter"
     "SNMPTRAP"
     "TrkWks"                                        # Distributed Link Tracking Client
@@ -45,6 +46,16 @@ $services = @(
     #"WlanSvc"                                      # WLAN AutoConfig
     #"wscsvc"                                       # Windows Security Center Service
     #"WSearch"                                      # Windows Search
+    # new
+    "iphlpsvc"
+    "IpxlatCfgSvc"
+    "SessionEnv"
+    "TermService"
+    "UmRdpService"
+    "SCardSvr"
+    "TabletInputService"
+    "WebClient"
+    "WFDSConMgrSvc"
 )
 
 foreach ($service in $services) {
