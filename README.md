@@ -21,3 +21,10 @@
 
 - Package List PS: Get-AppxPackage | Select Name, PackageFullName
 - Remove package: Get-AppxPackage -allusers <PackageFullName> | Remove-AppxPackage
+
+
+## Local Group Policy editor (win+r > gpedit.msc):
+
+- Disable LLMNR:
+    Computer Configuration -> Administrative Templates -> Network -> DNS Client
+    Enable Turn Off Multicast Name Resolution policy by changing its value to Enabled

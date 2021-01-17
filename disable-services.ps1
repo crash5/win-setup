@@ -56,6 +56,7 @@ $services = @(
     "TabletInputService"
     "WebClient"
     "WFDSConMgrSvc"
+    "SSDPSRV"                                       # SSDP Discovery
 )
 
 foreach ($service in $services) {
