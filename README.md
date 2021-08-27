@@ -16,6 +16,7 @@
 - Hide lockscreen: gpedit > Administrative Templates > Control Panel > Personalization > Do not display the lock screen: Enabled
 - Run PS script method CMD: if not exist success.log cmd /c powershell.exe -executionpolicy bypass our.ps1 > success.log
 - Add QuickLaunch toolbar: %UserProfile%\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch
+- Bitlocker without TPM: gpedit -> Computer Configuration > Administrative Templates > Windows Components > BitLocker Drive Encryption > Operating System Drives: Require additional authentication at startup
 
 ## App remove
 
@@ -28,3 +29,8 @@
 - Disable LLMNR:
     Computer Configuration -> Administrative Templates -> Network -> DNS Client
     Enable Turn Off Multicast Name Resolution policy by changing its value to Enabled
+
+
+
+TODO:
+powercfg /requests
