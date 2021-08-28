@@ -17,7 +17,7 @@
 - Run PS script method CMD: if not exist success.log cmd /c powershell.exe -executionpolicy bypass our.ps1 > success.log
 - Add QuickLaunch toolbar: %UserProfile%\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch
 - Bitlocker without TPM: gpedit -> Computer Configuration > Administrative Templates > Windows Components > BitLocker Drive Encryption > Operating System Drives: Require additional authentication at startup
-
+- Startup folder: %UserProfile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 ## App remove
 
 - Package List PS: Get-AppxPackage | Select Name, PackageFullName
