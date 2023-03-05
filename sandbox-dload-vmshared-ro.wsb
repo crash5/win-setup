@@ -1,0 +1,8 @@
+<Configuration>
+<MappedFolders>
+   <MappedFolder>
+     <HostFolder>d:\x\dload\vmshared</HostFolder>
+     <ReadOnly>true</ReadOnly>
+   </MappedFolder>
+</MappedFolders>
+</Configuration>
