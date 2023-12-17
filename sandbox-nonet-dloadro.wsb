@@ -1,9 +1,0 @@
-<Configuration>
-<Networking>Disable</Networking>
-<MappedFolders>
-   <MappedFolder>
-     <HostFolder>d:\x\dload</HostFolder>
-     <ReadOnly>true</ReadOnly>
-   </MappedFolder>
-</MappedFolders>
-</Configuration>
