@@ -1,9 +1,21 @@
 <Configuration>
-<MappedFolders>
-   <MappedFolder>
-     <HostFolder>d:\x\dload\vmshared</HostFolder>
-     <ReadOnly>true</ReadOnly>
-   </MappedFolder>
-</MappedFolders>
-<Networking>Disable</Networking>
+    <AudioInput>Disable</AudioInput>
+    <Networking>Disable</Networking>
+    <PrinterRedirection>Disable</PrinterRedirection>
+    <VideoInput>Disable</VideoInput>
+    <vGPU>Disable</vGPU>
+
+    <ClipboardRedirection>Enable</ClipboardRedirection>
+    <ProtectedClient>Enable</ProtectedClient>
+
+    <LogonCommand>
+        <Command>explorer.exe C:\Users\WDAGUtilityAccount\vmshared</Command>
+    </LogonCommand>
+
+    <MappedFolders>
+        <MappedFolder>
+            <HostFolder>d:\x\dload\vmshared</HostFolder>
+            <ReadOnly>true</ReadOnly>
+        </MappedFolder>
+    </MappedFolders>
 </Configuration>
