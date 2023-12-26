@@ -34,3 +34,5 @@
 
 TODO:
 powercfg /requests
+
+list devices which can wake up the computer from sleep: powercfg /devicequery wake_armed
