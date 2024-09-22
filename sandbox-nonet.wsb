@@ -9,7 +9,7 @@
     <ProtectedClient>Enable</ProtectedClient>
 
     <LogonCommand>
-        <Command>explorer.exe C:\Users\WDAGUtilityAccount\Desktop\vmshared</Command>
+        <Command>C:\Users\WDAGUtilityAccount\Desktop\vmshared\logon_command.cmd</Command>
     </LogonCommand>
 
     <MappedFolders>
