@@ -18,6 +18,8 @@
 - Add QuickLaunch toolbar: %UserProfile%\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch
 - Bitlocker without TPM: gpedit -> Computer Configuration > Administrative Templates > Windows Components > BitLocker Drive Encryption > Operating System Drives: Require additional authentication at startup
 - Startup folder: %UserProfile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
+
 ## App remove
 
 - Package List PS: Get-AppxPackage | Select Name, PackageFullName
@@ -30,6 +32,18 @@
     Computer Configuration -> Administrative Templates -> Network -> DNS Client
     Enable Turn Off Multicast Name Resolution policy by changing its value to Enabled
 
+## Expanded right mouse click by default
+
+With regedit: `reg add HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32 /ve /d "" /f`
+
+From the user's powershell if regedit is disabled:
+```pwsh
+Get-ItemProperty -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32"
+
+New-Item -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}"
+New-Item -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32"
+Set-ItemProperty -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" -Name "(default)" -Value ""
+```
 
 
 TODO:
