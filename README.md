@@ -16,8 +16,11 @@
 - Hide lockscreen: gpedit > Administrative Templates > Control Panel > Personalization > Do not display the lock screen: Enabled
 - Run PS script method CMD: if not exist success.log cmd /c powershell.exe -executionpolicy bypass our.ps1 > success.log
 - Add QuickLaunch toolbar: %UserProfile%\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch
-- Bitlocker without TPM: gpedit -> Computer Configuration > Administrative Templates > Windows Components > BitLocker Drive Encryption > Operating System Drives: Require additional authentication at startup
 - Startup folder: %UserProfile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
+## Bitlocker
+- Bitlocker ask password on startup: gpedit -> Computer Configuration > Administrative Templates > Windows Components > BitLocker Drive Encryption > Operating System Drives: Require additional authentication at startup
+- Bitlocker allow letters in startup password: gpedit -> Computer Configuration > Administrative Templates > Windows Components > BitLocker Drive Encryption > Operating System Drives: Allow enhanced password
 
 
 ## App remove
